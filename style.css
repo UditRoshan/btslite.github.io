@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Source Sans Pro', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.landingPage {
+    height: 100vh;
+    background-image: url(images/bts7.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.landingPage::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.384);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.landingPage .landingPageContent h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    font-size: 40rem;
+    color: aliceblue;
+    z-index: 1;
+}
+
+.landingPage .landingPageContent a {
+    z-index: 1;
+    position: absolute;
+    top: 80%;
+    left: 50.65%;
+    transform: translate(-50.65%,-80%);
+    font-size: 6rem;
+    color: crimson;
+    transition: all 1s ease-in-out;
+}
+
+.landingPage .landingPageContent a:hover {
+    color: goldenrod;
+}
+
+.bts-full-form h2 {
+    position: absolute;
+    top: 70%;
+    left: 51%;
+    transform: translate(-51%,-70%);
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+}
+
+.homePage {
+    height: 100vh;
+    background-color: black;
+    background-image: url(images/bts92.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.navbar {
+    height: 100%;
+    
+}
+
+.navbar .menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.navbar .menu .item1 a {
+    margin-top: 2rem;
+    
+}
+
+.navbar .menu .item i {
+    color: rgb(255, 255, 255);
+    display: none;
+    
+}
+
+.navbar .menu a {
+    display: block;
+    margin: 0 0 1rem 0;
+    background-color: rgba(241, 241, 241, 0.562);
+    width: 150px;  
+    text-align: center;
+    padding: 1rem 0 ;
+    font-size: 1.5rem;
+    font-weight: 800;  
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease-in-out;
+     
+}
+
+.navbar .menu .item1 a:hover {
+    background-color: cornflowerblue;
+    color: rgb(255, 255, 255);
+    width: 300px;
+    border-radius: 0 40px 40px 0;
+}
+
+.navbar .menu .item2 a:hover {
+    background-color: rgb(170, 64, 64);
+    color: rgb(255, 255, 255);
+    width: 300px;
+    border-radius: 0 40px 40px 0;
+}
+
+.navbar .menu .item3 a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 300px;
+    border-radius: 0 40px 40px 0;
+}
+
+.navbar .menu .item4 a:hover {
+    background-color: orange;
+    color: rgb(255, 255, 255);
+    width: 300px;
+    border-radius: 0 40px 40px 0;
+}
+
+.navbar .menu a:hover i {
+    display: contents;
+}
+
+/* ##################### Song Page Styling ######################## */
+
+.song-page-container {
+    background: linear-gradient(45deg, #80d0c7, #13547a);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 200vh;
+}
+
+.song-page-container .heading img {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    margin: 0  auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: translateY(-100px);
+    opacity: 0;
+    animation: slide-from-top 1s forwards;
+}
+
+@keyframes slide-from-top {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem auto ;
+    background-color: rgba(0, 0, 0, 0.582);
+    width: 1500px;
+    padding: 2rem;
+}
+
+.social-media a {
+    font-size: 3rem;
+    color: white;
+    transition: all 0.6s ease-in-out;
+}
+
+.social-media a:hover {
+    color: gold;
+}
+
+.songs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.song-page-container .bts-name h2{
+    font-size: 5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    margin-top: 3rem;
+}
+
+.songs details{
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    border-left: 2px solid gold;
+    border-right: 2px solid gold;
+    width: 1500px;
+    margin: 1rem auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.songs details summary {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease-in-out;
+    color: white;
+}
+
+.songs details h2,p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 2rem 0;
+}
+
+.songs .flex {
+    background-color: rgba(0, 0, 0, 0.342);
+    padding: 1rem 2rem;
+}
+
+.songs .flex audio {
+    width: 1000px;
+    outline: none;
+} 
+
+.song-navbar {
+    height: 10%;
+    
+}
+
+.song-navbar .menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.song-navbar .menu .item1 a {
+    margin-top: 2rem;
+    
+}
+
+.song-navbar .menu .item i {
+    color: rgb(255, 255, 255);
+    display: none;
+    
+}
+
+.song-navbar .menu a {
+    display: block;
+    margin: 0 0 1rem 0;
+    background-color: rgba(235, 235, 235, 0.562);
+    width: 150px;  
+    text-align: center;
+    padding: 1rem 0 ;
+    font-size: 1.5rem;
+    font-weight: 800;  
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease-in-out;
+     
+}
+
+.song-navbar .menu .item1 a:hover {
+    background-color: cornflowerblue;
+    color: rgb(255, 255, 255);
+    width: 300px;
+    border-radius: 0 40px 40px 0;
+}
+
+.song-navbar .menu .item2 a:hover {
+    background-color: rgb(170, 64, 64);
+    color: rgb(255, 255, 255);
+    width: 300px;
+    border-radius: 0 40px 40px 0;
+}
+
+.song-navbar .menu .item3 a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 300px;
+    border-radius: 0 40px 40px 0;
+}
+
+.song-navbar .menu .item4 a:hover {
+    background-color: rgb(0, 175, 0);
+    color: rgb(255, 255, 255);
+    width: 300px;
+    border-radius: 0 40px 40px 0;
+}
+
+.song-navbar .menu a:hover i {
+    display: contents;
+}
+
+/* ########################## About Page Styling ############################ */
+
+.about-body {
+    height: 320vh;
+    background: linear-gradient(#93a5cf , #e4efe9);
+}
+
+.about-body .main-header h1 {
+    text-align: center;
+    background-color: #e4efe942;
+    font-size: 6rem;
+    color: rgba(255, 255, 255, 0.932);
+    letter-spacing: 10px;
+    padding: 3rem 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.song-navbar {
+    height: 10%;
+    
+}
+
+.song-navbar .menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.song-navbar .menu .item1 a {
+    margin-top: 2rem;
+    
+}
+
+.song-navbar .menu .item i {
+    color: rgb(255, 255, 255);
+    display: none;
+    
+}
+
+.song-navbar .menu a {
+    display: block;
+    margin: 0 0 1rem 0;
+    background-color: rgba(255, 255, 255, 0.562);
+    width: 150px;  
+    text-align: center;
+    padding: 1rem 0 ;
+    font-size: 1.5rem;
+    font-weight: 800;  
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease-in-out;
+     
+}
+
+.song-navbar .menu .item1 a:hover {
+    background-color: rgb(36, 207, 207);
+    color: rgb(255, 255, 255);
+    width: 300px;
+    border-radius: 0 40px 40px 0;
+}
+
+.song-navbar .menu .item2 a:hover {
+    background-color: rgb(207, 219, 29);
+    color: rgb(255, 255, 255);
+    width: 300px;
+    border-radius: 0 40px 40px 0;
+}
+
+.song-navbar .menu .item3 a:hover {
+    background-color: rgb(208, 50, 223);
+    color: rgb(255, 255, 255);
+    width: 300px;
+    border-radius: 0 40px 40px 0;
+}
+
+.song-navbar .menu a:hover i {
+    display: contents;
+}
+
+/* BTS MEMBERS SECTION */
+
+.bts-members h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    color: #e4efe9
+}
+
+.bts-members img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    padding: 2rem;
+}
+
+.bts-members .bts-jimin img {
+    object-position: center;
+}
+
+.bts-members .bts-v img {
+    object-position: center;
+}
+
+.bts-members .bts-jungkook img {
+    object-position: center;
+}
+
+.bts-members .description {
+    padding: 6rem;
+}
+
+.bts-members .description h2 {
+    font-size: 3rem;
+}
+
+.bts-members .description p {
+    color: black;
+    font-size: 1.3rem;
+}
+
+.bts-members .description a {
+    background-color: transparent;
+    padding: 1rem 3rem;
+    margin: 4rem 0 0 0;
+    font-size: 1.3rem;
+    border: 2px solid black;
+    transition: all 0.5s ease-in-out;
+}
+
+.bts-members .description a:hover {
+    background-color: #13547a;
+    border: none;
+    color: whitesmoke;
+}
+
+.bts-members .each-member {
+    width: 1500px;
+    margin: 0 auto;
+    
+}
+
+.bts-members .each-member .wearebts {
+    background-color: #cecece;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 4rem 0 0 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease-in-out;
+}
+
+.bts-members .each-member .wearebts:hover {
+    background-color: #f4f5bab2;
+}
+
+.bts-members .each-member .bts-rm img {
+    text-align: left;
+}
+
+/* ###################### Contact Page Styling ########################## */
+
+.contactPage {
+    background: linear-gradient(#B7F8DB , #50A7C2);
+    font-family: 'Raleway', sans-serif;
+    height: 200vh;
+}
+
+.contactPage .contactHeading h1 {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #cecece6e;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.contactPage h2 {
+    color: black;
+    margin: 10rem 0 3rem 0;
+    text-align: center;
+}
+
+.contact-form {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #c2c2c24f;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input {
+    margin: 3rem 0 2rem 0;
+    padding: 2rem 1rem;
+    width: 700px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+input:hover {
+    background-color: rgba(255, 255, 255, 0.493);
+    color: rgb(0, 0, 0);
+}
+
+textarea {
+    background-color: transparent;
+    margin: 2rem 0 2rem 0;
+    padding: 1.5rem 1rem;
+    width: 700px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    transition: all 0.5s ease-in-out;
+}
+
+textarea:hover {
+    background-color: rgba(255, 255, 255, 0.493);
+    color: rgb(0, 0, 0);
+}
+
+button {
+    border: none;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    background-color: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
+}
+
+.submit:hover {
+    background-color: rgb(0, 128, 68);
+    color: rgb(255, 255, 255);
+    cursor:pointer;
+    border: none;
+}
+
+.reset:hover {
+    background-color: rgb(128, 0, 0);
+    color: rgb(253, 253, 253);
+    cursor:pointer;
+    border: none;
+}
+
+.final-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+}
